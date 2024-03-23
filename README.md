@@ -1,4 +1,4 @@
-# dev-frontend-callenge
+# Dev Frontend Challenge
 
 DEV's Frontend Challenge "Glam Up My Markup"
 
