@@ -1,0 +1,95 @@
+:root {
+  --color-primary: #ff6c37;
+  --color-secondary: #e05320;
+
+  --color-white: #fff;
+  --color-black: #000;
+  --color-placeholder: #aaaaaa;
+
+  --border-radius-sm: 6px;
+  --border-radius-md: 12px;
+  --border-radius-lg: 24px;
+
+  --color-bg: #212121;
+
+  --alert-error: #f44336;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: var(--color-white);
+  background: var(--color-bg);
+}
+
+.alert-error {
+  margin-top: 4px;
+  margin-bottom: 4px;
+  color: var(--alert-error);
+}
+
+#camp-activities-inquiry {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+#camp-activities-inquiry h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  background-color: var(--color-primary);
+  border-radius: var(--border-radius-sm);
+  padding: 16px;
+}
+
+#camp-activities-inquiry form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 16px;
+  border: 1px solid var(--color-white);
+  border-radius: var(--border-radius-sm);
+}
+
+#camp-activities-inquiry form label {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+#camp-activities-inquiry form label[for='activity-select']::after {
+  content: '*';
+  color: var(--color-primary);
+}
+
+#camp-activities-inquiry form select {
+  cursor: pointer;
+  padding: 8px;
+  border: 1px solid var(--color-white);
+  border-radius: var(--border-radius-sm);
+  outline: var(--color-primary);
+}
+
+#camp-activities-inquiry form textarea {
+  padding: 8px;
+  border: 1px solid var(--color-white);
+  border-radius: var(--border-radius-sm);
+  outline: var(--color-primary);
+}
+#camp-activities-inquiry form textarea::placeholder {
+  color: var(--color-placeholder);
+}
+
+#camp-activities-inquiry form button {
+  cursor: pointer;
+  padding: 8px;
+  border: none;
+  border-radius: var(--border-radius-sm);
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+#camp-activities-inquiry form button:hover {
+  background-color: var(--color-secondary);
+}
